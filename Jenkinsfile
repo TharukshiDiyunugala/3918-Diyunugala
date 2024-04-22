@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout source code from Git repository
-                git 'https://github.com/TharukshiDiyunugala/3918-Diyunugal'
+                git credentialsId:'8684275a-83a5-4fa5-8a21-f65facbf91b3', url: 'git@github.com/TharukshiDiyunugala/3918-Diyunugal.git'
             }
         }
 
